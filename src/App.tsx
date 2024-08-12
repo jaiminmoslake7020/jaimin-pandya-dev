@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import Header from './components/base/Header';
 import Footer from './components/base/Footer';
+import './icons';
 
 function App() {
 

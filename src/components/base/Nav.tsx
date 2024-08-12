@@ -27,7 +27,7 @@ const Nav = (props: NavPropTypes) => {
     return (
         <nav className={"nav"}>
             {
-                menuLinks.map(({label, content}) => <a href={content} className={"nav-link"} >{label}</a>)
+                menuLinks.map(({label, content}) => <a key={label} href={content} className={"nav-link"} >{label}</a>)
             }
         </nav>
     );
