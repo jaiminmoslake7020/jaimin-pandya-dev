@@ -37,7 +37,7 @@ const SocialLinks = (props: SocialLinksPropTypes) => {
     return (
         <nav className={"social-media-links-wrapper"} >
             {
-                socialLinks.map(({label, link, icon}) => <a rel="noreferrer" aria-label={label} target={"_blank"}
+                socialLinks.map(({label, link, icon}) => <a  aria-label={label} target={"_blank"}
                     href={link}
                 >
                     <FaIcon icon={["fab", icon] as IconProp} />
