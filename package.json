@@ -22,7 +22,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "precommit": "craco test && npx eslint src/."
   },
   "eslintConfig": {
     "extends": [
