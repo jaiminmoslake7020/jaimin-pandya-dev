@@ -1,7 +1,6 @@
 import React from 'react';
 import Nav from './Nav';
 import ColorThemeSelector from './ColorThemeSelector';
-import theme from 'tailwindcss/defaultTheme';
 
 export type HeaderPropTypes = {
     theme: string,
