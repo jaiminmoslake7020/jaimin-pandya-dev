@@ -6,7 +6,6 @@ export type HeaderPropTypes = {
 };
 
 const Header = (props: HeaderPropTypes) => {
-    const {} = props;
     return (
         <header>
             <div className={"logo"}>

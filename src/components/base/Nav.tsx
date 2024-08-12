@@ -24,9 +24,6 @@ const menuLinks = [
 ];
 
 const Nav = (props: NavPropTypes) => {
-    const {
-
-    } = props;
     return (
         <nav className={"nav"}>
             {
