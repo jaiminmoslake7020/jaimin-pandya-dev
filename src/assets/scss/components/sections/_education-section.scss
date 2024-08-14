@@ -1,0 +1,87 @@
+.section.section-education {
+  @apply flex flex-col items-start justify-start gap-8;
+
+  .section-education-content{
+    @apply flex py-8;
+
+    .education-wrapper{
+      @apply flex flex-row flex-wrap gap-16;
+      @apply w-full;
+
+      .education-box-wrapper{
+        @apply w-full lg:w-[calc(50%_-_32px)];
+        @apply scale-90 transition-transform overflow-hidden;
+        @apply hover:scale-100;
+      }
+
+      .education-box{
+        @apply bg-content text-bkg p-4 rounded-lg shadow-lg cursor-pointer;
+        @apply flex flex-col gap-4 w-full;
+        @apply before:absolute before:left-0 before:top-0 before:w-full before:h-full before:inset-0 before:opacity-0;
+        @apply before:bg-gradient-to-r before:from-transparent before:to-transparent before:via-bkg/40;
+
+        .degree-name{
+          @apply font-semibold;
+        }
+
+        .collage-logo{
+          @apply flex w-full justify-center ;
+
+          a{
+            @apply w-full flex justify-center py-4;
+          }
+
+          img{
+            max-height: 100px;
+            max-width: 180px;
+          }
+
+        }
+
+
+
+      }
+
+
+
+    }
+
+
+  }
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.App[data-theme="light"] {
+  .education-box-wrapper{
+    .collage-logo {
+      &.white-text{
+
+      }
+      &.black-text{
+        @apply bg-bkg;
+      }
+    }
+  }
+}
+
+.App[data-theme="dark"], .App[data-theme="purple"], .App[data-theme="green"], .App[data-theme="blue"] {
+  .education-box-wrapper{
+    .collage-logo {
+      &.white-text{
+        @apply bg-bkg;
+      }
+      &.black-text{
+      }
+    }
+  }
+}
