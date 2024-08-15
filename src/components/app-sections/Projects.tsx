@@ -13,6 +13,92 @@ const projects = [
         projectTech: "React, TypeScript, Rest API, Redux",
         projectLogo: emplaceLogo,
         logoAppearance: "white-text"
+    },
+    {
+        projectName: "Buyer Platform ",
+        companyName: "Emplace Technology Inc",
+        projectUrl: "https://buyer.emplace.com/",
+        projectTech: "React, TypeScript, Rest API, Redux",
+        projectLogo: emplaceLogo,
+        logoAppearance: "white-text"
+    },
+    {
+        projectName: "UmbraCity Mobile User App",
+        companyName: "Emplace Technology Inc",
+        projectUrl: [{
+            icon: "apple",
+            url: "https://apps.apple.com/us/app/umbracity/id1540808911"
+        }, {
+            icon: "android",
+            url: "https://play.google.com/store/apps/details?id=com.umbracity.prod&hl=en_CA"
+        }],
+        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectLogo: umbracityLogo,
+        logoAppearance: "white-text"
+    },
+    {
+        projectName: "UmbraCity Maps",
+        companyName: "Emplace Technology Inc",
+        projectUrl: "https://owner.emplace.com/",
+        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectLogo: umbracityLogo,
+        logoAppearance: "white-text"
+    },
+    {
+        projectName: "UmbraCity Website",
+        companyName: "Emplace Technology Inc",
+        projectUrl: "https://owner.emplace.com/",
+        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectLogo: umbracityLogo,
+        logoAppearance: "white-text"
+    },
+    {
+        projectName: "Emplace Website",
+        companyName: "Emplace Technology Inc",
+        projectUrl: "https://owner.emplace.com/",
+        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectLogo: umbracityLogo,
+        logoAppearance: "white-text"
+    },
+    {
+        projectName: "Classifieds Posting Platform",
+        companyName: "Emplace Technology Inc",
+        projectUrl: "https://owner.emplace.com/",
+        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectLogo: umbracityLogo,
+        logoAppearance: "white-text"
+    },
+    {
+        projectName: "Weather Kiosk App",
+        companyName: "Emplace Technology Inc",
+        projectUrl: "https://owner.emplace.com/",
+        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectLogo: umbracityLogo,
+        logoAppearance: "white-text"
+    },
+    {
+        projectName: "Weather Kiosk App",
+        companyName: "Emplace Technology Inc",
+        projectUrl: "https://owner.emplace.com/",
+        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectLogo: umbracityLogo,
+        logoAppearance: "white-text"
+    },
+    {
+        projectName: "Classifieds FireTV Web App",
+        companyName: "Emplace Technology Inc",
+        projectUrl: "https://owner.emplace.com/",
+        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectLogo: umbracityLogo,
+        logoAppearance: "white-text"
+    },
+    {
+        projectName: "OpsInsights",
+        companyName: "Emplace Technology Inc",
+        projectUrl: "https://owner.emplace.com/",
+        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectLogo: umbracityLogo,
+        logoAppearance: "white-text"
     }
 ] as ProjectBoxPropTypes[];
 
@@ -33,7 +119,7 @@ const Projects = () => {
 
     return (
         <section className={"section section-projects"} >
-            <h1>Experience</h1>
+            <h1>Projects</h1>
             <div className={"section-content section-projects-content"}>
                 <div className={"projects-wrapper"}>
                     {

@@ -1,9 +1,14 @@
 import React from 'react';
+import FaIcon from '../FaIcon';
+import {IconProp} from '@fortawesome/fontawesome-svg-core';
 
 export type ProjectBoxPropTypes = {
     projectName: string,
     companyName: string,
-    projectUrl: string,
+    projectUrl: {
+        icon: IconProp,
+        url: string
+    }[] | string,
     projectTech: string,
     projectLogo: string,
     logoAppearance: string
@@ -38,6 +43,7 @@ const ProjectBox = (props: ProjectBoxPropTypes) => {
         projectLogo,
         logoAppearance,
     } = props;
+
     return (
         <div className={"project-box-wrapper group  "}>
             <div className={"project-box lg:group-hover:before:animate-[shimmer_1s_forwards] "}>
@@ -45,7 +51,7 @@ const ProjectBox = (props: ProjectBoxPropTypes) => {
                     <h4>{projectName}</h4>
                 </div>
                 <div className={"project-url"}>
-                    <p>{projectUrl}</p>
+                    <p>{!Array.isArray(projectUrl) ? projectUrl : "App Stores"}</p>
                 </div>
                 <div className={"company-name"}>
                     <p>{companyName}</p>
@@ -54,9 +60,19 @@ const ProjectBox = (props: ProjectBoxPropTypes) => {
                     <p>{projectTech}</p>
                 </div>
                 <div className={`project-logo ${logoAppearance} `}>
-                    <a rel="noreferrer" href={projectUrl} target={"_blank"} >
-                        <img src={projectLogo}  alt={projectName} />
-                    </a>
+                    {
+                        Array.isArray(projectUrl) ?
+                            <>
+                            {projectUrl.map(({icon, url}: {icon:IconProp, url:string}) => {
+                                return <a key={icon as string} rel="noreferrer" href={url} target={"_blank"} >
+                                    <FaIcon icon={["fab",icon] as IconProp} />
+                                </a>
+                            })}
+                            </>
+                            : <a rel="noreferrer" href={projectUrl} target={"_blank"} >
+                                <img src={projectLogo}  alt={projectName} />
+                            </a>
+                    }
                 </div>
             </div>
         </div>

@@ -10,6 +10,8 @@ import {
     faGitlab,
     faStackOverflow,
     faLinkedin,
+    faAndroid,
+    faApple
 } from '@fortawesome/free-brands-svg-icons';
 
 library.add(faClose as IconDefinition);
@@ -21,3 +23,5 @@ library.add(faGithub as IconDefinition);
 library.add(faGitlab as IconDefinition);
 library.add(faStackOverflow as IconDefinition);
 library.add(faLinkedin as IconDefinition);
+library.add(faAndroid as IconDefinition);
+library.add(faApple as IconDefinition);
