@@ -44,6 +44,7 @@ const Nav = ({showSidebar}: NavPropTypes) => {
                     }}
                 >{label}</a>)
             }
+            <a target="_blank" rel={"noreferrer"} className={"nav-link"} href={"https://drive.google.com/file/d/1QIa83hV9TDzm3e1pCVhg2aA6zx-NWd-y/view?usp=sharing"}>Resume (PDF)</a>
         </nav>
     );
 }
