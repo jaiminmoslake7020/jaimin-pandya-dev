@@ -42,9 +42,9 @@ function App() {
       <main className={"main-content"}>
           <Profile />
           <Experience />
-          <Education />
           <Projects />
           <Skills />
+          <Education />
       </main>
       <Footer />
     </div>

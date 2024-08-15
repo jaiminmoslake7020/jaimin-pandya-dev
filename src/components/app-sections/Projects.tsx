@@ -4,6 +4,7 @@ import {useWindowSize} from '@uidotdev/usehooks';
 import {useScreenType} from '../../utils/utils';
 import emplaceLogo  from '../../assets/images/companies/emplace.svg';
 import umbracityLogo  from '../../assets/images/companies/umbracity.png';
+import opsinsightsLogo  from '../../assets/images/companies/opsinsights.png';
 
 const projects = [
     {
@@ -32,15 +33,15 @@ const projects = [
             icon: "android",
             url: "https://play.google.com/store/apps/details?id=com.umbracity.prod&hl=en_CA"
         }],
-        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectTech: "React-Native, TypeScript, Rest API",
         projectLogo: umbracityLogo,
-        logoAppearance: "white-text"
+        logoAppearance: ""
     },
     {
         projectName: "UmbraCity Maps",
         companyName: "Emplace Technology Inc",
         projectUrl: "https://owner.emplace.com/",
-        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectTech: "React, TypeScript, Rest API, Redux",
         projectLogo: umbracityLogo,
         logoAppearance: "white-text"
     },
@@ -48,7 +49,7 @@ const projects = [
         projectName: "UmbraCity Website",
         companyName: "Emplace Technology Inc",
         projectUrl: "https://owner.emplace.com/",
-        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectTech: "NextJs, TypeScript, Tailwind",
         projectLogo: umbracityLogo,
         logoAppearance: "white-text"
     },
@@ -56,48 +57,40 @@ const projects = [
         projectName: "Emplace Website",
         companyName: "Emplace Technology Inc",
         projectUrl: "https://owner.emplace.com/",
-        projectTech: "React-Native, TypeScript, Rest API, Redux",
-        projectLogo: umbracityLogo,
+        projectTech: "NextJs, TypeScript, Tailwind",
+        projectLogo: emplaceLogo,
         logoAppearance: "white-text"
     },
     {
         projectName: "Classifieds Posting Platform",
         companyName: "Emplace Technology Inc",
-        projectUrl: "https://owner.emplace.com/",
-        projectTech: "React-Native, TypeScript, Rest API, Redux",
-        projectLogo: umbracityLogo,
+        projectUrl: "https://classifieds.emplace.com/",
+        projectTech: "React, TypeScript, Rest API, Redux",
+        projectLogo: emplaceLogo,
         logoAppearance: "white-text"
     },
     {
         projectName: "Weather Kiosk App",
         companyName: "Emplace Technology Inc",
-        projectUrl: "https://owner.emplace.com/",
-        projectTech: "React-Native, TypeScript, Rest API, Redux",
-        projectLogo: umbracityLogo,
-        logoAppearance: "white-text"
-    },
-    {
-        projectName: "Weather Kiosk App",
-        companyName: "Emplace Technology Inc",
-        projectUrl: "https://owner.emplace.com/",
-        projectTech: "React-Native, TypeScript, Rest API, Redux",
+        projectUrl: "https://umbracity.com/",
+        projectTech: "React",
         projectLogo: umbracityLogo,
         logoAppearance: "white-text"
     },
     {
         projectName: "Classifieds FireTV Web App",
         companyName: "Emplace Technology Inc",
-        projectUrl: "https://owner.emplace.com/",
-        projectTech: "React-Native, TypeScript, Rest API, Redux",
-        projectLogo: umbracityLogo,
+        projectUrl: "https://emplace.com/",
+        projectTech: "React, TypeScript",
+        projectLogo: emplaceLogo,
         logoAppearance: "white-text"
     },
     {
         projectName: "OpsInsights",
         companyName: "Emplace Technology Inc",
         projectUrl: "https://owner.emplace.com/",
-        projectTech: "React-Native, TypeScript, Rest API, Redux",
-        projectLogo: umbracityLogo,
+        projectTech: "PHP, Yii 2.0, MySql",
+        projectLogo: opsinsightsLogo,
         logoAppearance: "white-text"
     }
 ] as ProjectBoxPropTypes[];

@@ -47,32 +47,32 @@ const ProjectBox = (props: ProjectBoxPropTypes) => {
     return (
         <div className={"project-box-wrapper group  "}>
             <div className={"project-box lg:group-hover:before:animate-[shimmer_1s_forwards] "}>
+                <div className={`project-logo ${logoAppearance} ${Array.isArray(projectUrl) ? 'is-array' : ''} `}>
+                    {
+                        Array.isArray(projectUrl) ?
+                            <>
+                                {projectUrl.map(({icon, url}: {icon:IconProp, url:string}) => {
+                                    return <a key={icon as string} rel="noreferrer" href={url} target={"_blank"} >
+                                        <FaIcon icon={["fab",icon] as IconProp} />
+                                    </a>
+                                })}
+                            </>
+                            : <a rel="noreferrer" href={projectUrl} target={"_blank"} >
+                                <img src={projectLogo}  alt={projectName} />
+                            </a>
+                    }
+                </div>
                 <div className={"project-name"}>
                     <h4>{projectName}</h4>
                 </div>
                 <div className={"project-url"}>
-                    <p>{!Array.isArray(projectUrl) ? projectUrl : "App Stores"}</p>
+                    <p>{!Array.isArray(projectUrl) ? <a rel="noreferrer" href={"projectUrl"}>{projectUrl}</a> : "App Stores"}</p>
                 </div>
                 <div className={"company-name"}>
                     <p>{companyName}</p>
                 </div>
                 <div className={"project-tech"}>
                     <p>{projectTech}</p>
-                </div>
-                <div className={`project-logo ${logoAppearance} `}>
-                    {
-                        Array.isArray(projectUrl) ?
-                            <>
-                            {projectUrl.map(({icon, url}: {icon:IconProp, url:string}) => {
-                                return <a key={icon as string} rel="noreferrer" href={url} target={"_blank"} >
-                                    <FaIcon icon={["fab",icon] as IconProp} />
-                                </a>
-                            })}
-                            </>
-                            : <a rel="noreferrer" href={projectUrl} target={"_blank"} >
-                                <img src={projectLogo}  alt={projectName} />
-                            </a>
-                    }
                 </div>
             </div>
         </div>

@@ -26,7 +26,7 @@
       }
 
       .project-box{
-        @apply bg-content text-bkg p-4 rounded-lg shadow-lg cursor-pointer;
+        @apply border-4 border-content text-content p-4 rounded-lg shadow-lg cursor-pointer;
         @apply flex flex-col gap-4 w-full;
         @apply lg:before:-skew-x-12 lg:before:absolute lg:before:inset-0 lg:before:-translate-x-full lg:before:bg-gradient-to-r lg:before:from-transparent lg:before:via-bkg/10 lg:before:to-transparent;
 
@@ -39,12 +39,25 @@
           }
         }
 
-        .job-title{
+        .project-name{
           @apply font-semibold;
         }
 
-        .company-logo{
-          @apply flex w-full justify-center ;
+        .project-url{
+          a{
+            @apply underline;
+          }
+        }
+
+        .project-logo{
+          @apply flex justify-center -ml-4 -mt-4 py-4;
+          width: calc(100% + 32px);
+
+          &.is-array{
+            a{
+              @apply text-6xl py-2;
+            }
+          }
 
           a{
             @apply w-full flex justify-center py-4;
@@ -72,12 +85,12 @@
 
 .App[data-theme="light"] {
   .project-box-wrapper{
-    .company-logo {
+    .project-logo {
       &.white-text{
-
+        @apply bg-content;
       }
       &.black-text{
-        @apply bg-bkg;
+
       }
     }
   }
@@ -85,11 +98,12 @@
 
 .App[data-theme="dark"], .App[data-theme="purple"], .App[data-theme="green"], .App[data-theme="blue"] {
   .project-box-wrapper{
-    .company-logo {
+    .project-logo {
       &.white-text{
-        @apply bg-bkg;
+
       }
       &.black-text{
+        @apply bg-bkg;
       }
     }
   }
