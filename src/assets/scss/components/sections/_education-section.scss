@@ -5,12 +5,12 @@
     @apply flex py-8;
 
     .education-wrapper{
-      @apply flex flex-row flex-wrap gap-16;
+      @apply flex flex-row flex-wrap gap-8;
       @apply w-full;
 
       .education-box-wrapper{
-        @apply w-full lg:w-[calc(50%_-_32px)];
-        @apply scale-90 transition-transform overflow-hidden;
+        @apply w-full lg:w-[calc(50%_-_16px)];
+        @apply scale-95 transition-transform overflow-hidden;
         @apply hover:scale-100;
       }
 
