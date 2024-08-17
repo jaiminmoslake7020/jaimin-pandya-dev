@@ -91,7 +91,7 @@ const projects = [
         projectUrl: "https://owner.emplace.com/",
         projectTech: "PHP, Yii 2.0, MySql",
         projectLogo: opsinsightsLogo,
-        logoAppearance: "white-text"
+        logoAppearance: ""
     }
 ] as ProjectBoxPropTypes[];
 

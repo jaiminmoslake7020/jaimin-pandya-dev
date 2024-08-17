@@ -5,11 +5,11 @@
     @apply flex py-8 w-full;
 
     .projects-wrapper{
-      @apply flex flex-row flex-wrap gap-16;
+      @apply flex flex-row flex-wrap gap-16 md:gap-8 2xl:gap-16;
       @apply w-full;
 
       .project-box-wrapper{
-        @apply w-full md:w-[calc(50%_-_32px)] xl:w-[calc(33.33%_-_48px)];
+        @apply w-full md:w-[calc(50%_-_16px)] xl:w-[calc(33.33%_-_24px)] 2xl:w-[calc(33.33%_-_48px)];
         @apply lg:scale-90 transition-transform overflow-hidden;
         @apply lg:hover:scale-100 rotate-0;
 

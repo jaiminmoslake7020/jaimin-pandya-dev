@@ -5,13 +5,13 @@
     @apply flex py-8;
 
     .experience-wrapper{
-      @apply flex flex-row flex-wrap gap-16;
+      @apply flex flex-row flex-wrap gap-16 md:gap-8 2xl:gap-16;
       @apply w-full;
 
       .experience-box-wrapper{
-        @apply w-full md:w-[calc(50%_-_32px)] xl:w-[calc(33.33%_-_48px)];
-        @apply lg:scale-90 transition-transform overflow-hidden;
-        @apply lg:hover:scale-100 rotate-0;
+        @apply w-full md:w-[calc(50%_-_16px)] xl:w-[calc(33.33%_-_24px)] 2xl:w-[calc(33.33%_-_48px)];
+        @apply transition-transform overflow-hidden;
+        @apply lg:scale-90 lg:hover:scale-100 rotate-0;
 
         &:nth-of-type(2n+1){
           @apply lg:-rotate-2;
