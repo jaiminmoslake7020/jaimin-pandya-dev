@@ -14,16 +14,16 @@ const menuLinks = [
         content: "experience"
     },
     {
-        label: "Education",
-        content: "education"
-    },
-    {
         label: "Projects",
         content: "projects"
     },
     {
         label: "Skills",
         content: "skills"
+    },
+    {
+        label: "Education",
+        content: "education"
     },
 ];
 

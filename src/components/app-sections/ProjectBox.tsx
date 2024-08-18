@@ -46,8 +46,8 @@ const ProjectBox = (props: ProjectBoxPropTypes) => {
 
     return (
         <div className={"project-box-wrapper group  "}>
-            <div className={"project-box lg:group-hover:before:animate-[shimmer_1s_forwards] "}>
-                <div className={`project-logo ${logoAppearance} ${Array.isArray(projectUrl) ? 'is-array' : ''} `}>
+            <div className={"project-box "}>
+                <div className={`project-logo group-hover:bg-bkg group-hover:text-content ${logoAppearance} ${Array.isArray(projectUrl) ? 'is-array' : ''} `}>
                     {
                         Array.isArray(projectUrl) ?
                             <>

@@ -44,7 +44,8 @@
         }
 
         .company-logo{
-          @apply flex w-full justify-center ;
+          @apply flex w-full justify-center -ml-2 -mb-2 ;
+          width: calc(100% + 16px);
 
           a{
             @apply w-full flex justify-center py-4;
