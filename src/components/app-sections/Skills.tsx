@@ -30,7 +30,6 @@ export const SkillBoxList = ({skillsListData}: {skillsListData:string[]}) => {
             if (doItOnce) {
                 setDoItOnce(false);
                 setTimeout(() => {
-                    console.log("ref", id, ref.current.getBoundingClientRect().width, doItOnce);
                     if (ref.current && skillsListData.length === Array.from(ref.current.children).length) {
                         const wrapperWidth = ref.current.getBoundingClientRect().width;
                         let start = 0 ;
