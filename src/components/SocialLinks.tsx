@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import FaIcon from './FaIcon';
 import {IconProp} from '@fortawesome/fontawesome-svg-core';
 
@@ -30,7 +30,7 @@ const Tooltip = (props : {
     const divRef = useRef<HTMLDivElement>(null);
     const width = divRef.current?.getBoundingClientRect().width || undefined;
     const height = divRef.current?.getBoundingClientRect().height || undefined;
-    return <div ref={divRef} className={"hidden absolute min-w-64 h-fit top-10 opacity-0 border-content border-2 md:group-hover:flex flex-col gap-0 group-hover:opacity-100 transition-opacity overflow-visible"}
+    return <div ref={divRef} className={`hidden absolute min-w-64 h-fit top-10 opacity-0 border-content border-2 md:group-hover:flex flex-col gap-0 group-hover:opacity-100 transition-opacity overflow-visible item-${active}`}
         style={ width && height ? {
             top: (-1 * (height + 20))+"px",
             left: (-1 * ((width / 2) + 10))+"px",
